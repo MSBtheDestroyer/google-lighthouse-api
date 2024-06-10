@@ -10,7 +10,8 @@ perl google-lighthouse-api/githublighthouse.pl --api $api_key
 Your API key can be generated following the steps here:
 https://developers.google.com/speed/docs/insights/v5/
 
-After that has been set, the normal usage is to pass it a domain either naked or with the http/s. If naked is used, Https will be prefixed to it and run "https://$original_url"
+After that has been set, the normal usage is to pass it a domain either naked or with the http/s. 
+If naked is used, Https will be prefixed to it and run "https://$original_url"
 
 Example Run:
 perl google-lighthouse-api/githublighthouse.pl example.com
