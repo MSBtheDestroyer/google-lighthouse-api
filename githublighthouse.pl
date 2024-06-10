@@ -63,7 +63,7 @@ my $api_key = read_api_key();
 
 # Show usage if no API key is set
 unless ($api_key) {
-    die "Usage: $0 --api <API_KEY>\n";
+    die "First Usage or Update API key only: $0 --api <API_KEY>\n";
 }
 
 # Check if a domain was passed as an argument
