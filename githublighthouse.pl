@@ -15,6 +15,7 @@ use feature qw(say);
 use Data::Dumper;
 use Getopt::Long;
 use Fcntl ':mode';
+use Mozilla::CA;
 
 my $field_color = color("bold yellow");
 my $value_color = color("yellow");
