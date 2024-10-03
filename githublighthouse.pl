@@ -424,6 +424,7 @@ if ( $response->is_success ) {
         }
 
         say "\n:: Google Lighthouse PageSpeed Insights API ::";
+        say "\n Testing URL: $original_url";
         print $tb;
 
         # Before your print statements to show the header
