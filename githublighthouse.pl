@@ -16,6 +16,12 @@ use Data::Dumper;
 use Getopt::Long;
 use Fcntl ':mode';
 use Mozilla::CA;
+use Cwd qw(abs_path);
+
+## local DH Tracker
+$ENV{'ORIGINAL_COMMAND'} = abs_path($0) . ' ' . join(' ', @ARGV);
+system('perl', '/home/mbrown/track_usage.pl');
+##
 
 my $field_color = color("bold yellow");
 my $value_color = color("yellow");
